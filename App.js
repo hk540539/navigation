@@ -9,6 +9,14 @@ const AppNavigator = createStackNavigator({
 	Home: {
 		screen: Home,
 		screenTwo: Index
+	},
+	defaultNavigationOptions: {
+		title: 'Welcome',
+		headerTintColor: '#fff',
+		headerStyle: {
+			backgroundColor: '#BA2F16'
+		},
+		headerTitleStyle: { color: '#FFF' }
 	}
 });
 const App = createAppContainer(AppNavigator);
